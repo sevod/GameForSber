@@ -3,12 +3,18 @@ package org.sevod;
 public enum Direction {
 
     //TODO почистить
-    UP,
-    DOWN,
-    WEST,
-    EAST,
-    NORTH,
-    SOUTH
+//    UP,
+//    DOWN,
+//    WEST,
+//    EAST,
+//    NORTH,
+//    SOUTH,
+    FORWARD,
+    BACK,
+    LEFT,
+    RIGHT
+
+
 
 //    UP ("Верх"),
 //    DOWN ("Низ"),
