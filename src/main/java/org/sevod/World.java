@@ -11,14 +11,20 @@ public class World {
         if (world == null)
             world = new Location[x][y];
         Inventory emptyInventory = new Inventory();
-        Location startLocation = new Location("Вход в кроличью нору", "Алиса перед большим деревом, у нее под ногами кроличью нора.  Наберите \"Вперед\" и приключения начнутся ", emptyInventory);
+        Location startLocation = new Location("На дне кроличьей норы (9,5)", "Алиса стоит на дне кроличьей норы.", emptyInventory);
         world[9][5] = startLocation;
 
-        Location location2 = new Location("Падение в кроличью нору", "Алиса медленно падает в кроличью нору. Это может продолжаться вечно. Наберите \"Вперед\" и ее ноги коснутся пола", emptyInventory);
+        Location location2 = new Location("Локация (8, 5)", "Алиса медленно падает в кроличью нору. Это может продолжаться вечно. Наберите \"Вперед\" и ее ноги коснутся пола", emptyInventory);
         world[8][5] = location2;
 
-        Location location3 = new Location("На дне кроличьей норы", "Алиса стоит на дне кроличьей норы.", emptyInventory);
+        Location location3 = new Location("Локация (7, 5)", "Алиса стоит на дне кроличьей норы.", emptyInventory);
         world[7][5] = location3;
+
+        Location location4 = new Location("Локация (8, 4)", "Алиса стоит на дне кроличьей норы.", emptyInventory);
+        world[8][4] = location4;
+
+        Location location5 = new Location("Локация (8, 6)", "Алиса стоит на дне кроличьей норы.", emptyInventory);
+        world[8][6] = location5;
 
         return world;
     }

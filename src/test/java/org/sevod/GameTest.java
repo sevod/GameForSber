@@ -2,6 +2,7 @@ package org.sevod;
 
 import static org.junit.Assert.assertTrue;
 
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -9,12 +10,38 @@ import org.junit.Test;
  */
 public class GameTest
 {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
+    Player player;
+    Location[][] world;
+
+    @Before
+    public void createWorld()
     {
-        assertTrue( true );
+        world = World.getWorld();
+        player = new Player(8, 5);
+    }
+
+
+    @Test
+    public void goForward()
+    {
+        assertTrue( Action.action("вперед", player));
+    }
+
+    @Test
+    public void goBack()
+    {
+        assertTrue( Action.action("назад", player));
+    }
+
+    @Test
+    public void goLeft()
+    {
+        assertTrue( Action.action("влево", player));
+    }
+
+    @Test
+    public void goRight()
+    {
+        assertTrue( Action.action("вправо", player));
     }
 }

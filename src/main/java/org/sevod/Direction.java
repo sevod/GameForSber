@@ -3,17 +3,28 @@ package org.sevod;
 public enum Direction {
 
     //TODO почистить
-//    UP,
+
+
+    //    UP,
 //    DOWN,
 //    WEST,
 //    EAST,
 //    NORTH,
 //    SOUTH,
-    FORWARD,
-    BACK,
-    LEFT,
-    RIGHT
+    FORWARD("вперед"),
+    BACK("назад"),
+    LEFT("влево"),
+    RIGHT("вправо");
 
+    private String title;
+
+    Direction(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
 
 
 //    UP ("Верх"),
